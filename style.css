@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*Estrutura padrão para estilizar o css*/
+  
+}
+
+#display {
+  font-size: 300px;
+  margin-bottom: 20px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Arial, Arial, Helvetica, sans-serif;
+  background-image: url('./relogio.jpg'); /* pega a imegem salva dentro do arquivo criado*/
+  background-size: cover;/* Ajusta o tamanho da imagem no fundo */
+  background-position: center; /* Centraliza a imagem no fundo */
+  background-attachment: fixed;  /* Faz com que a imagem fique fixa ao rolar a página */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+}
+
+button {
+  background: #636262;
+    color: rgb(22, 16, 16);
+    padding: 15px 30px; /*aumenta o tamanho do button internamente*/
+    margin: 5px;
+    border-radius: 7vh;
+    font-size: 26px;
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+    
+    &:hover {
+      background: #fff; /*muda a cor do button quando clicado*/
+    }
+  }
